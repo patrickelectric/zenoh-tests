@@ -1,10 +1,16 @@
 # Rust Ping Pong
 
 # UDP
-- 73kHz
+- 73KHz
 
 # Socket file
-- 80kHz
+- 80KHz
 
-# Zenoh
-- 312kHz
+# Zenoh async
+- 312KHz
+
+# Zenoh sync
+- 47KHz
+
+# Tokio
+- 1.3MHz

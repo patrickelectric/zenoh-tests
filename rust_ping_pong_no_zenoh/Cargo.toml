@@ -8,12 +8,8 @@ name = "zenoh"
 path = "src/zenoh.rs"
 
 [[bin]]
-name = "zenoh_ping"
-path = "src/zenoh_ping.rs"
-
-[[bin]]
-name = "zenoh_pong"
-path = "src/zenoh_pong.rs"
+name = "zenoh_sync"
+path = "src/zenoh_sync.rs"
 
 [[bin]]
 name = "udp"
@@ -22,6 +18,15 @@ path = "src/udp.rs"
 [[bin]]
 name = "socket_file"
 path = "src/socket_file.rs"
+
+[[bin]]
+name = "tokio"
+path = "src/tokio.rs"
+
+
+[[bin]]
+name = "threads"
+path = "src/threads.rs"
 
 [dependencies]
 tempfile = "3.17.1"
