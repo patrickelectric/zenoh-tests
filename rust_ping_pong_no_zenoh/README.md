@@ -2,8 +2,10 @@
 
 All tests running in a Raspberry Pi 5
 
-- 1.4MHz Tokio
-- 330KHz Zenoh async
-- 128KHz Socket file
-- 114KHz Zenoh sync
-- 101KHz UDP
+| Protocol     | Frequency | Time per msg |
+|--------------|-----------|--------------|
+| Tokio        | 1.4 MHz   | 357 ns       |
+| Zenoh async  | 330 kHz   | 1.5 µs       |
+| Socket file  | 128 kHz   | 3.9 µs       |
+| Zenoh sync   | 114 kHz   | 4.4 µs       |
+| UDP          | 101 kHz   | 5.4 µs       |
