@@ -4,6 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [[bin]]
+name = "zenoh"
+path = "src/zenoh.rs"
+
+[[bin]]
 name = "udp"
 path = "src/udp.rs"
 
@@ -14,3 +18,4 @@ path = "src/socket_file.rs"
 [dependencies]
 tempfile = "3.17.1"
 tokio = { version = "1", features = ["full"] }
+zenoh = "1.2.1"

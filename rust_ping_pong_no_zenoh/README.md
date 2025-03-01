@@ -5,3 +5,6 @@
 
 # Socket file
 - 80kHz
+
+# Zenoh
+- 312kHz
