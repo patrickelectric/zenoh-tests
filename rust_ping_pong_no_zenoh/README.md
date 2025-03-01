@@ -2,17 +2,8 @@
 
 All tests running in a Raspberry Pi 5
 
-## UDP
-- 101KHz
-
-## Socket file
-- 128KHz
-
-## Zenoh async
-- 330KHz
-
-## Zenoh sync
-- 114KHz
-
-## Tokio
-- 1.4MHz
+- 1.4MHz Tokio
+- 330KHz Zenoh async
+- 128KHz Socket file
+- 114KHz Zenoh sync
+- 101KHz UDP
