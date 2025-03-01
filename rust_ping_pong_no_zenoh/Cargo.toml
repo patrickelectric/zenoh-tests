@@ -8,6 +8,14 @@ name = "zenoh"
 path = "src/zenoh.rs"
 
 [[bin]]
+name = "zenoh_ping"
+path = "src/zenoh_ping.rs"
+
+[[bin]]
+name = "zenoh_pong"
+path = "src/zenoh_pong.rs"
+
+[[bin]]
 name = "udp"
 path = "src/udp.rs"
 

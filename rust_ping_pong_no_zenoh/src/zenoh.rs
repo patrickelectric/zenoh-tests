@@ -39,7 +39,7 @@ async fn main() -> zenoh::Result<()> {
                 pong_publisher.put(num.wrapping_add(1).to_ne_bytes()).await.unwrap();
 
                 inner_count += 1;
-                if inner_count >= 300_000 {
+                if inner_count >= 500_000 {
                     println!("Pong loop frequency: {} Hz", 1_000_000 * inner_count / last.elapsed().as_micros());
                     inner_count = 0;
                     last = Instant::now();
