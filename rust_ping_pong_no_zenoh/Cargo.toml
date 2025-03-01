@@ -1,0 +1,16 @@
+[package]
+name = "rust_ping_pong_udp"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "udp"
+path = "src/udp.rs"
+
+[[bin]]
+name = "socket_file"
+path = "src/socket_file.rs"
+
+[dependencies]
+tempfile = "3.17.1"
+tokio = { version = "1", features = ["full"] }

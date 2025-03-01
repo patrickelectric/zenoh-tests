@@ -5,7 +5,7 @@ use std::time::Instant;
 async fn main() -> std::io::Result<()> {
     // Server Task
     let server = tokio::spawn(async {
-        let socket = UdpSocket::bind("0.0.0.0:1234").await.unwrap();
+        let socket = UdpSocket::bind("127.0.0.1:1234").await.unwrap();
         let mut buf = [0u8; 1024];
         loop {
             let (size, src) = socket.recv_from(&mut buf).await.unwrap();
@@ -17,9 +17,9 @@ async fn main() -> std::io::Result<()> {
         }
     });
 
-    // Client Task with connected socket to reduce address overhead
+    // Client Task
     let client = tokio::spawn(async {
-        let socket = UdpSocket::bind("0.0.0.0:0").await.unwrap();
+        let socket = UdpSocket::bind("127.0.0.1:0").await.unwrap();
         socket.connect("127.0.0.1:1234").await.unwrap();
         let mut buf = [0u8; 1024];
         let mut inner_count = 0;
