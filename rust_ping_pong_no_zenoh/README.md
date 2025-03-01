@@ -1,16 +1,18 @@
 # Rust Ping Pong
 
-# UDP
-- 73KHz
+All tests running in a Raspberry Pi 5
 
-# Socket file
-- 80KHz
+## UDP
+- 101KHz
 
-# Zenoh async
-- 312KHz
+## Socket file
+- 128KHz
 
-# Zenoh sync
-- 47KHz
+## Zenoh async
+- 330KHz
 
-# Tokio
-- 1.3MHz
+## Zenoh sync
+- 114KHz
+
+## Tokio
+- 1.4MHz
